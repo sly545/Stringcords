@@ -3,25 +3,29 @@ import styles from "../Header/Hearder.module.css";
 
 function Hearder() {
     return (
-      <div>
-        <div> 
-        <h1>StringCords</h1>
-        <h2>Noter vos cordes de guitar</h2>
-        <img className={styles.logo} src={logo} alt="logo" />
+      <div className={styles.Wrap}>
+           <div className={styles.AjouCord}> 
+         <ul>
+         <li> ajouter une corde </li>
+         <li> aceille </li>
+         </ul>
         </div>
-      <div> 
+        <div className={styles.ConternerTitle} > 
+        <div className={styles.Logotitle}> 
+        <img className={styles.logo} src={logo} alt="logo" />
+        <h1 className={styles.Title}>StringCords</h1>
+       
+        </div>
+        <h2 className={styles.Slogan}>Noter vos cordes de guitar</h2>
+        </div>
+      <div className={styles.Navbar} > 
         <ul>
           <li>Sign up </li>
           <li>login </li>
         </ul>
       </div>
 
-        <div> 
-         <ul>
-         <li> ajouter une corde </li>
-         <li> aceille </li>
-         </ul>
-        </div>
+     
       </div>
     )
   }
