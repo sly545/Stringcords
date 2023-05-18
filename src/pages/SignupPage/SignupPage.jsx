@@ -1,10 +1,12 @@
-function SignUpForm() {
+import SignUpForm from "../../components/SIgnForm/SignForm";
+
+function SignUpPage() {
     return (
       <div>
-        <h1>Inscription</h1>
+        <SignUpForm />
         {/* Contenu du formulaire d'inscription */}
       </div>
     );
   }
 
-  export default SignUpForm; 
+  export default SignUpPage; 

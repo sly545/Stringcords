@@ -1,11 +1,12 @@
-// LoginForm.jsx
-function LoginForm() {
+import LoginForm from "../../components/LoginForm.jsx/LoginForm";
+
+
+function LoginPage() {
     return (
-      <div>
-        <h1>Connexion</h1>
-        {/* Contenu du formulaire de connexion */}
-      </div>
+    <div>
+     <LoginForm />
+    </div>
     );
   }
 
-export default LoginForm ; 
+export default LoginPage ; 
