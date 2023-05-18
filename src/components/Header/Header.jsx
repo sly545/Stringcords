@@ -16,7 +16,7 @@ function Hearder() {
         <h1 className={styles.Title}>StringCords</h1>
        
         </div>
-        <h2 className={styles.Slogan}>Noter vos cordes de guitar</h2>
+        <h2 className={styles.Slogan}>Noter vos cordes de guitar relou</h2>
         </div>
       <div className={styles.Navbar} > 
         <ul>
