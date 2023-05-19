@@ -4,7 +4,7 @@ function SignUpPage() {
     return (
       <div>
         <SignUpForm />
-        {/* Contenu du formulaire d'inscription */}
+         <h1> PAGE SIGNUP</h1>
       </div>
     );
   }
