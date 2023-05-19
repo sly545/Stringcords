@@ -1,4 +1,6 @@
 import  { useState } from 'react';
+import Styles from '../LoginForm.jsx/LoginForm.module.css'
+
 
 function LoginForm() {
   const [email, setEmail] = useState('');
@@ -23,8 +25,9 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+
+    <form onSubmit={handleSubmit} className={Styles.Form} >
+      <div  >
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -36,7 +39,7 @@ function LoginForm() {
       <div>
         <label htmlFor="password">Mot de passe:</label>
         <input
-          type="password"
+          type="password" 
           id="password"
           value={password}
           onChange={handlePasswordChange}
@@ -44,6 +47,7 @@ function LoginForm() {
       </div>
       <button type="submit">Se connecter</button>
     </form>
+ 
   );
 }
 

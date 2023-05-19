@@ -1,0 +1,7 @@
+/* App.module.css */
+.app {
+    background-image: url('./assets/guitar-g63f0619b4_1280.jpg'); /* Assurez-vous de remplacer ceci par le chemin de votre image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
