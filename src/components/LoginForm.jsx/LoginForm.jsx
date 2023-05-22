@@ -25,28 +25,30 @@ function LoginForm() {
   };
 
   return (
-
+   
     <form onSubmit={handleSubmit} className={Styles.Form} >
-      <div  >
-        <label htmlFor="email">Email:</label>
-        <input
+      <h1 className={Styles.TitleLogin} >Login here</h1>
+      <div className={Styles.ContenerEmail}>
+        <label htmlFor="email"></label>
+        <input className={Styles.LoginEmail}
           type="email"
           id="email"
           value={email}
           onChange={handleEmailChange}
         />
       </div>
-      <div>
-        <label htmlFor="password">Mot de passe:</label>
-        <input
+      <div className={Styles.ContenerPass} >
+        <label  htmlFor="password"></label>
+        <input className={Styles.LoginPass}
           type="password" 
           id="password"
           value={password}
           onChange={handlePasswordChange}
         />
       </div>
-      <button type="submit">Se connecter</button>
+      <button className={Styles.ButtonLogin} type="submit">Se connecter</button>
     </form>
+    
  
   );
 }

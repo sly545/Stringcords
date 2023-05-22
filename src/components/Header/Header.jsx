@@ -37,7 +37,7 @@ function Header() {
           <img className={styles.logo} src={logo} alt="logo" />
           <h1 className={styles.Title}>StringCords</h1>
         </div>
-        <h2 className={styles.Slogan}>Noter vos cordes de guitare</h2>
+       <h2 className={styles.Slogan}>Noter vos cordes de guitare</h2>
       </div>
       <div className={styles.Navbar}>
         {!isAuthenticated && <Link className={styles.SignLog} to="/signup">Sign up</Link>}

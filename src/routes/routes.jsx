@@ -6,7 +6,8 @@ import AcoustiquePage from '../pages/CategoryPage/AcoustiquePage';
 import ElectriquePage from '../pages/CategoryPage/ElectriquePage';
 import CalssiquePage from '../pages/CategoryPage/ClassiquePage';
 import NotFound from '../pages/NotFound/NotFound';
-import AddStringPage from '../pages/AddStringPage/AddStringPage';   
+import AddStringPage from '../pages/AddStringPage/AddStringPage';
+import OneCordPage from '../pages/OneCordPage/OneCordPage';   
 
 const RoutesConfig = () => (
  <Routes>
@@ -16,6 +17,7 @@ const RoutesConfig = () => (
  <Route path="/category/acoustique" element={<AcoustiquePage />} />
  <Route path="/category/electrique" element={<ElectriquePage />} />
  <Route path="/category/classique" element={<CalssiquePage />} />
+ <Route path='/oneCord' element= {<OneCordPage />} />
  <Route path="/Addstring" element={<AddStringPage />} />
  <Route path="/*" element={<NotFound />} />
  </Routes>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Styles from '../LoginForm.jsx/LoginForm.module.css'
 
 function SignUpForm() {
   // État local pour stocker les valeurs des champs de formulaire
@@ -27,26 +28,27 @@ function SignUpForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
+    <form onSubmit={handleSubmit} className={Styles.Form} >
+      <h1 className={Styles.TitleLogin} >Signu up</h1>
+      <div  className={Styles.ContenerEmail} >
+        <label htmlFor="email"></label>
+        <input className={Styles.LoginEmail}
           type="email"
           id="email"
           value={email}
           onChange={handleEmailChange}
         />
       </div>
-      <div>
-        <label htmlFor="password">Mot de passe:</label>
-        <input
+      <div className={Styles.ContenerPass}>
+        <label htmlFor="password"></label>
+        <input className={Styles.LoginPass}
           type="password"
           id="password"
           value={password}
           onChange={handlePasswordChange}
         />
       </div>
-      <button type="submit">S&apos;enregistrer</button>
+      <button className={Styles.ButtonLogin} type="submit">S&apos;enregistrer</button>
     </form>
   );
 }

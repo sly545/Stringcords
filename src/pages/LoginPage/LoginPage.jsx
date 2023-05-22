@@ -1,9 +1,8 @@
 import LoginForm from "../../components/LoginForm.jsx/LoginForm";
-
-
+import styles from '../LoginPage/LoginPage.module.css'
 function LoginPage() {
     return (
-    <div>
+    <div className={styles.LoginSpace} >
      <LoginForm />
     </div>
     );

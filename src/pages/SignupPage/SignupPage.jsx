@@ -1,10 +1,9 @@
 import SignUpForm from "../../components/SIgnForm/SignForm";
-
+import styles from '../LoginPage/LoginPage.module.css'
 function SignUpPage() {
     return (
-      <div>
+      <div className={styles.LoginSpace} >
         <SignUpForm />
-         <h1> PAGE SIGNUP</h1>
       </div>
     );
   }
