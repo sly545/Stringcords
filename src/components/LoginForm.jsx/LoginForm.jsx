@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import Styles from '../LoginForm.jsx/LoginForm.module.css'
+import logo from '../../assets/stringCords-logos_black_polices_gris.png';
 
 
 function LoginForm() {
@@ -27,7 +28,7 @@ function LoginForm() {
   return (
    
     <form onSubmit={handleSubmit} className={Styles.Form} >
-      <h1 className={Styles.TitleLogin} >Login here</h1>
+     <div className={Styles.ContLogo}> <img className={Styles.logo} src={logo} alt="logo" /> <h1 className={Styles.TitleLogin} >Login here</h1>  </div>
       <div className={Styles.ContenerEmail}>
         <label htmlFor="email"></label>
         <input className={Styles.LoginEmail}

@@ -10,10 +10,20 @@
 
 }
 .TitleLogin{
-    color: red;
+    color: oldlace;
 
 }
-
+.logo{
+    width: 90px;
+    padding-right: 4px;
+}
+.ContLogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 6px;
+  width: 86%;
+}
 .ContenerEmail{
     display: flex;
     margin-bottom: 25px;
@@ -48,7 +58,7 @@
     position: absolute;
     width: 0px;
     height: 55px;
-    top: 231px;
+    top: 246px;
     left: 23%;
     background-color:#45aaf2;
     z-index: -1;
